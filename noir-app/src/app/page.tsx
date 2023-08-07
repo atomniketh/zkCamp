@@ -1,4 +1,7 @@
 import Image from 'next/image'
+import initNoirWasm, { acir_read_bytes, compile } from '@noir-lang/noir_wasm';
+import initialiseAztecBackend from '@noir-lang/aztec_backend';
+import { initialiseResolver } from '@noir-lang/noir-source-resolver';
 
 export default function Home() {
   return (
